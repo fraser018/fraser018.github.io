@@ -1,31 +1,198 @@
-<!DOCTYPE html>
-<link href="styles/main.css" rel="stylesheet" type="text/css" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>It's A Blog!</title>
+  <style>
 
+        .parallax-container {
+          height: 350px;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+          .parallax-container {
+              height: 300px;
+              max-width: 100%;
+          }
+        }
+        @media only screen and (max-width: 500px) {
+          .parallax-container {
+              height: 150px;
+              max-width: 100%;
+          }
+        }
+        
+        .section{
+          padding-top: 4vw;
+          padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+          background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+          background: transparent;
+        }
+        </style>
+</head>
+<body>
 
-<html>
-  <head>
-    <title>My blog!</title>
-  </head>
-
-  <body>
-    <header>
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="blog/blog_main.html">Blog</a></li>
-              <li><a href="contact/contact.html">Contact</a></li>
-            </ul>
-          </nav>
-    </header>
-
-    <div>
-      <h1>It's my blog!</h1>
-      <div>
-        <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F09%2Fian-callum-vanquish-25-release-005.jpg?quality=95&w=1170&cbr=1&q=90&fit=max" alt="Made You Look" style="width: 100%">
+  <header>
+    <nav class="nav-wrapper blue lighten-3">
+        <div class="container">
+            <a href="#" class="brand-logo">Blog</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#blog">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Linked In">
+                    <i class="fab fa-linkedin"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Twitter">
+                       <i class="fab fa-twitter"></i>
+                </a></li>
+               </ul>
+           <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+           </ul>
+        </div>
+    </nav>
+   </header>
+  <!-- parallax -->
+  <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/stream.JPG" alt="" class="responsive-img">
       </div>
     </div>
+  
+  <section class="section container scrollspy" id="blog">
+      <div class="row">
+          <div class="col s12 l4">
+              <h2 class="indigo-text text-darken-4">My Blogs</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+              <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+            </div>
+          <div class="col s12 l6 offset-l2">
+              <!-- tabs -->
+              <ul class="tabs">
+                  <li class="tab col s6">
+                      <a href="#tech" class="active indigo-text text-darken-4">Technical Blog</a>
+                  </li>
+                  <li class="tab col s6">
+                      <a href="#core" class="indigo-text text-darken-4">Core Blog</a>
+                  </li>
+              </ul>
+              <div id="tech" class="col s12">
+                      <p class="flow-text indigo-text text-darken-4">TECHNICAL</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                      <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, <a href="tech-blog.html">Click here to go to my Tech Blog</a></p>
+                  </div>
+                  <div id="core" class="col s12">
+                      <p class="flow-text indigo-text text-darken-4">CORE</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                      <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, <a href="core-blog.html">Click here to go to my Core Blog</a></p>
+                  </div>
+          </div>
+      </div>
+      
+      </section>
+      
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/jetboat.JPG" alt="" class="responsive-img">
+    </div>
+  </div>
 
-<footer>2019 Fraser Callum</footer>
 
-  </body>
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+      <div class="row">
+          <div class="col s12 l5">
+              <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmotempor incididunt ut labore et dolore magna aliqua. Nulla pharetra diam siamet nisl suscipit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmotempor incididunt ut labore et dolore magna aliqua. Nulla pharetra diam siamet nisl suscipit.</p>
+  
+              
+          </div>
+          <div class="col s12 l5 offset-l2">
+              <form>
+                  <div class="input-field">
+                      <i class="material-icons prefix">email</i>
+                      <input type="email" id="email">
+                      <label for="email">Your Email</label>
+                  </div>
+                  <div class="input-field">
+                      <i class="material-icons prefix">message</i>
+                      <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                      <label for="message">Your message</label>
+                  </div>
+                  
+                  <div class="input-field center">
+                      <button class="btn">Submit</button>
+                  </div>
+              </form>
+          </div>
+          
+      </div>
+  </section>
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+      <div class="container">
+          <div class="row">
+              <div class="col s12 l6">
+                  <h5>About Me</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmotempor incididunt ut labore et dolore magna aliqua. Nulla pharetra diam siamet nisl suscipit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmotempor incididunt ut labore et dolore magna aliqua. Nulla pharetra diam siamet nisl suscipit.</p>
+              </div>
+              <div class="col s12 l4 offset-l2">
+                  <h5>Connect</h5>
+                  <ul>
+                      <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Linked In</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+          <div class="container center-align">&copy; 2019 Fraser Callum</div>
+      </div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+          disableWeekends: true
+      });
+      $('.tooltipped').tooltip()
+      $('.scrollspy').scrollSpy()
+    });
+  </script>
+</body>
 </html>

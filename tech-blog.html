@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Tech Blog</title>
+  <style>
+
+        .parallax-container {
+          height: 350px;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+          .parallax-container {
+              height: 300px;
+              max-width: 100%;
+          }
+        }
+        @media only screen and (max-width: 500px) {
+          .parallax-container {
+              height: 150px;
+              max-width: 100%;
+          }
+        }
+        
+        .section{
+          padding-top: 4vw;
+          padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+          background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+          background: transparent;
+        }
+        </style>
+</head>
+<body>
+
+
+<header>
+ <nav class="nav-wrapper blue lighten-3">
+     <div class="container">
+         <a href="#" class="brand-logo">Blog</a>
+         <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+             <i class="material-icons">menu</i>
+         </a>
+         <ul class="right hide-on-med-and-down">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="#">Blog</a></li>
+             <li><a href="#contact">Contact</a></li>
+             <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Instagram">
+                 <i class="fab fa-instagram"></i>
+             </a></li>
+             <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Facebook">
+                 <i class="fab fa-facebook"></i>
+             </a></li>
+             <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Linked In">
+                 <i class="fab fa-linkedin"></i>
+             </a></li>
+             <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Twitter">
+                    <i class="fab fa-twitter"></i>
+             </a></li>
+            </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Blog</a></li>
+             <li><a href="#contact">Contact</a></li>
+        </ul>
+     </div>
+ </nav>
+</header>
+  <!-- parallax -->
+  <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/stream.JPG" alt="" class="responsive-img">
+        </div>
+    </div>
+    
+  <!-- photo / grid -->
+<section class="container section scrollspy" id="photos">
+    
+    <div class="row">
+        <div class="col s12 l4 offset-l1 push-l7">
+            <img src="img/fence.JPG" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1 pull-l5 right-align">
+            <h2 class="indigo-text text-darken-4">Tech Blog 2</h2>
+            <h4>HTML, CSS, Javascript and the DOM</h4>
+            <a href="#push" class="btn blue modal-trigger right-align">Push Me</a>
+        </div>
+
+        <div class="modal" id="push">
+            <div class="row">
+                <div class="column">
+                    <h4>HTML, CSS, Javascript and the DOM</h4>
+
+                   <h5>An analogy to describe the differences between HTML and CSS</h5>
+                   <p>HTML and CSS are both vitally important when designing a website today. A straight forward way to think about the two is that HTML is your a web pages main structure. Whereas CSS is the way that the page ends up looking, with information regarding colours and theming.</p>
+                        <p>Whilst HTML handles the core structure of the page, CSS is able to adjust this structure quite dramatically. With the growing disparity between screen sizes and resolutions across all over our devices, CSS can help to resize HTML elements so that they display correctly no matter what screen you are using.! </p>
+
+                    <h5>Control Flow and Loops</h5>
+                    <p>In programming the control flow of code is literally the controlling of where and what our code does.JavaScript is executed line by line from top to bottom, unless something in our code specifically changes that flow.</p>
+                    <p>A simple example of control flow would be using loops, we can essentially ask our code if a situation is true before continuing to the next part. If this is not true then we can tell the code to loop back around until something changes.</p>
+                    <p>A real life example of this could be like the basic checks we do on a daily basis. For example checking if there is milk in the fridge before making coffee; if there is then we continue to make a coffee but if there isn't then we would go and get some from the shop first before continuing to make the coffee.</p>
+
+                    <h5>The DOM (Document Object Model)</h5>
+                    <p>The DOM (Document Object Model) is a way of navigating and manipulating elements of HTML on a live website.These changes are primarily made using JavaScript code.</p>
+                <div class="img-column"><img src="img/dommodel.jpg" class="responsive-img materialboxed">
+                </div>
+                    <p>Modifying the code on a website using the DOM allows us to create more interactive websites for the users. The DOM can be used to modify basically anything on the site.An example of this could be that you have an 'Accept' button for a form but you want this button to be disabled by default. Only after the user has ticked a box would the button activate and allow the user to click it.</p>
+
+                    <h5>Arrays vs Objects</h5>
+                    <p>We use objects and arrays to store data and then access this data at another time. The two are very similar to each other but generally speaking an array would be used for ordered collections of data. Being able to access the data based on it's numerical location in the array. An object is usually used to represent a real world 'object' where it's characteristics can be broken down.</p>
+                    <div class="img-column center"><img src="img/object.jpg" class="responsive-img">
+                    </div>
+                    <br>
+                    <div class="img-column center"><img src="img/array.jpg" class="responsive-img">
+                    </div>
+                    <br>
+                    <h5>Functions</h5>
+                    <p>Functions are a huge part of JavaScript, without them JS would not work.</p>
+                    <p>They are basically small  collections of code that can be run and return an answer. Functions can be run over and over again so that they do not need to be re-written in the code. This way a function can be specified at the start of the code and later re-called by the code to get the answer we need.</p>
+                    <p>Example of a basic multiplication function: </p>
+                    <div class="img-column center"><img src="img/function.jpg" class="responsive-img">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="modal-close btn blue">Close</a>
+                </div>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col s12 l4">
+            <br>
+            <br>
+            <img src="img/whitsunday.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">Tech Blog 1</h2>
+            <h4>Margins, Borders and Padding! </h4>
+            <a href="#push" class="btn blue modal-trigger">Push Me</a>
+        </div>
+        <div>
+            
+
+            <div class="modal" id="push">
+                <div class="row">
+                    <div class="column">
+                      <h4>The main differences between these three are below:</h4>
+                      <ul>
+                        <li><p>The <strong>Margin</strong> is the area between the object border and the next object.</p></li>
+                        <li><p>The <strong>Padding</strong> is the area between the contect of your object and the border.</p></li>
+                        <li><p>The <strong>border</strong> is the area between the two above. Usually what you would see as an actual border.</p></li>
+                    </ul>
+                    </div>
+                    <div class="img-column"><img src="img/boxmodel.jpg" class="responsive-img">
+                  </div>
+                <div class="modal-footer">
+                        <a href="#" class="modal-close btn blue">Close</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+
+
+
+  <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/snow.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+  <!-- contact form -->
+<section class="section container scrollspy" id="contact">
+    <div class="row">
+        <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmotempor incididunt ut labore et dolore magna aliqua. Nulla pharetra diam siamet nisl suscipit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmotempor incididunt ut labore et dolore magna aliqua. Nulla pharetra diam siamet nisl suscipit.</p>
+
+            
+        </div>
+        <div class="col s12 l5 offset-l2">
+            <form>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                    <label for="message">Your message</label>
+                </div>
+                <div class="input-field center">
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</section>
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+      <div class="container">
+          <div class="row">
+              <div class="col s12 l6">
+                  <h5>About Me</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmotempor incididunt ut labore et dolore magna aliqua. Nulla pharetra diam siamet nisl suscipit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmotempor incididunt ut labore et dolore magna aliqua. Nulla pharetra diam siamet nisl suscipit.</p>
+              </div>
+              <div class="col s12 l4 offset-l2">
+                  <h5>Connect</h5>
+                  <ul>
+                      <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Linked In</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+          <div class="container center-align">&copy; 2019 Fraser Callum</div>
+      </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker({
+            disableWeekends: true
+        });
+        $('.tooltipped').tooltip()
+        $('.scrollspy').scrollSpy()
+        $('.modal').modal()
+    });
+  </script>
+</body>
+</html>
