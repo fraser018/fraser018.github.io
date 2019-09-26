@@ -1,193 +1,206 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <title>It's A Blog!</title>
-  <style>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>It's A Blog!</title>
+    <style>
         .parallax-container {
-          height: 350px;
+            height: 350px;
         }
-        
+
         @media only screen and (max-width: 1000px) {
-          .parallax-container {
-              height: 300px;
-              max-width: 100%;
-          }
+            .parallax-container {
+                height: 300px;
+                max-width: 100%;
+            }
         }
+
         @media only screen and (max-width: 500px) {
-          .parallax-container {
-              height: 150px;
-              max-width: 100%;
-          }
+            .parallax-container {
+                height: 150px;
+                max-width: 100%;
+            }
         }
-        
-        .section{
-          padding-top: 4vw;
-          padding-bottom: 4vw;
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
         }
-        .tabs .indicator{
-          background-color: #1a237e;
+
+        .tabs .indicator {
+            background-color: #1a237e;
         }
-        .tabs .tab a:focus, .tabs .tab a:focus.active{
-          background: transparent;
+
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
+            background: transparent;
         }
-        </style>
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <nav class="nav-wrapper blue lighten-3">
-        <div class="container">
-            <a href="#" class="brand-logo">Blog</a>
-            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#blog">Blogs</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a></li>
-                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a></li>
-                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Linked In">
-                    <i class="fab fa-linkedin"></i>
-                </a></li>
-                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Twitter">
-                       <i class="fab fa-twitter"></i>
-                </a></li>
-               </ul>
-           <ul class="sidenav grey lighten-2" id="mobile-menu">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-           </ul>
-        </div>
-    </nav>
-   </header>
-  <!-- parallax -->
-  <div class="parallax-container">
-      <div class="parallax">
-        <img src="img/stream.JPG" alt="" class="responsive-img">
-      </div>
-    </div>
-  
-  <section class="section container scrollspy" id="blog">
-      <div class="row">
-          <div class="col s12 l4">
-              <h2 class="indigo-text text-darken-4">My Blogs</h2>
+    <header>
+        <nav class="nav-wrapper blue lighten-3">
+            <div class="container">
+                <a href="#" class="brand-logo">Blog</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#blog">Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Linked In">
+                            <i class="fab fa-linkedin"></i>
+                        </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-          <div class="col s12 l6 offset-l2">
-              <!-- tabs -->
-              <ul class="tabs">
-                  <li class="tab col s6">
-                      <a href="#tech" class="active indigo-text text-darken-4">Technical Blog</a>
-                  </li>
-                  <li class="tab col s6">
-                      <a href="#core" class="indigo-text text-darken-4">Core Blog</a>
-                  </li>
-              </ul>
-              <div id="tech" class="col s12">
-                      <p class="flow-text indigo-text text-darken-4">TECHNICAL</p>
-                      <p>In this set of blogs I will try to discuss the technical elements of my EDA course. <a href="tech-blog.html">Click here to go to my Tech Blog</a></p>
-                  </div>
-                  <div id="core" class="col s12">
-                      <p class="flow-text indigo-text text-darken-4">CORE</p>
-                      <p>These blogs are about learning and development from a personal perspective. <a href="core-blog.html">Click here to go to my Core Blog</a></p>
-                  </div>
-          </div>
-      </div>
-      
-      </section>
-      
-  <!-- parallax -->
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="img/jetboat.JPG" alt="" class="responsive-img">
+        </nav>
+    </header>
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/stream.JPG" alt="" class="responsive-img">
+        </div>
     </div>
-  </div>
+
+    <section class="section container scrollspy" id="blog">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">My Blogs</h2>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <!-- tabs -->
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#tech" class="active indigo-text text-darken-4">Technical Blog</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#core" class="indigo-text text-darken-4">Core Blog</a>
+                    </li>
+                </ul>
+                <div id="tech" class="col s12">
+                    <p class="flow-text indigo-text text-darken-4">TECHNICAL</p>
+                    <p>In this set of blogs I will try to discuss the technical elements of my EDA course. <a
+                            href="tech-blog.html">Click here to go to my Tech Blog</a></p>
+                </div>
+                <div id="core" class="col s12">
+                    <p class="flow-text indigo-text text-darken-4">CORE</p>
+                    <p>These blogs are about learning and development from a personal perspective. <a
+                            href="core-blog.html">Click here to go to my Core Blog</a></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/jetboat.JPG" alt="" class="responsive-img">
+        </div>
+    </div>
 
 
-  <!-- contact form -->
-  <section class="section container scrollspy" id="contact">
-      <div class="row">
-          <div class="col s12 l5">
-              <h2 class="indigo-text text-darken-4">Get In Touch</h2>
-              <p></p>
+    <!-- contact form -->
+    <section class="section container scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+                <p></p>
 
-  
-              
-          </div>
-          <div class="col s12 l5 offset-l2">
-              <form>
-                  <div class="input-field">
-                      <i class="material-icons prefix">email</i>
-                      <input type="email" id="email">
-                      <label for="email">Your Email</label>
-                  </div>
-                  <div class="input-field">
-                      <i class="material-icons prefix">message</i>
-                      <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
-                      <label for="message">Your message</label>
-                  </div>
-                  
-                  <div class="input-field center">
-                      <button class="btn">Submit</button>
-                  </div>
-              </form>
-          </div>
-          
-      </div>
-  </section>
-  <!-- footer -->
-  <footer class="page-footer grey darken-3">
-      <div class="container">
-          <div class="row">
-              <div class="col s12 l6">
-                  <h5>About Me</h5>
-                  <p>My name is Fraser, I just started studying with DevAcademy. </p>
-                  <p>With a fairly IT heavy backgroud and a number of years in TV production I have decided it's time for something new. I love tech and I want to be part of the future of the internet and everything connected to it.</p>
-                  <p>This is a blog of my journey.</p>
-              </div>
-              <div class="col s12 l4 offset-l2">
-                  <h5>Connect</h5>
-                  <ul>
-                        <li><a href="https://www.linkedin.com/in/fraser-callum-a84a1a33" class="grey-text text-lighten-3">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/fraserthepirate/" class="grey-text text-lighten-3">Instagram</a></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      <div class="footer-copyright grey darken-4">
-          <div class="container center-align">&copy; 2019 Fraser Callum</div>
-      </div>
-  </footer>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.sidenav').sidenav();
-      $('.materialboxed').materialbox();
-      $('.parallax').parallax();
-      $('.tabs').tabs();
-      $('.datepicker').datepicker({
-          disableWeekends: true
-      });
-      $('.tooltipped').tooltip()
-      $('.scrollspy').scrollSpy()
-    });
-  </script>
+
+
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                        <label for="message">Your message</label>
+                    </div>
+
+                    <div class="input-field center">
+                        <button class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>My name is Fraser, I just started studying with DevAcademy. </p>
+                    <p>With a fairly IT heavy backgroud and a number of years in TV production I have decided it's time
+                        for something new. I love tech and I want to be part of the future of the internet and
+                        everything connected to it.</p>
+                    <p>This is a blog of my journey.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/fraser-callum-a84a1a33"
+                                class="grey-text text-lighten-3">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/fraserthepirate/"
+                                class="grey-text text-lighten-3">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2019 Fraser Callum</div>
+        </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip()
+            $('.scrollspy').scrollSpy()
+        });
+    </script>
 </body>
+
 </html>

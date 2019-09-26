@@ -1,259 +1,344 @@
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <title>Core Blog</title>
-  <style>
-
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Core Blog</title>
+    <style>
         .parallax-container {
-          height: 350px;
+            height: 350px;
         }
-        
+
         @media only screen and (max-width: 1000px) {
-          .parallax-container {
-              height: 300px;
-              max-width: 100%;
-          }
+            .parallax-container {
+                height: 300px;
+                max-width: 100%;
+            }
         }
+
         @media only screen and (max-width: 500px) {
-          .parallax-container {
-              height: 150px;
-              max-width: 100%;
-          }
+            .parallax-container {
+                height: 150px;
+                max-width: 100%;
+            }
         }
-        
-        .section{
-          padding-top: 4vw;
-          padding-bottom: 4vw;
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
         }
-        .tabs .indicator{
-          background-color: #1a237e;
+
+        .tabs .indicator {
+            background-color: #1a237e;
         }
-        .tabs .tab a:focus, .tabs .tab a:focus.active{
-          background: transparent;
+
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
+            background: transparent;
         }
-        </style>
+    </style>
 </head>
+
 <body>
 
-  <!-- navbar -->
-<header>
- <nav class="nav-wrapper blue lighten-3">
-     <div class="container">
-         <a href="#" class="brand-logo">Blog</a>
-         <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-             <i class="material-icons">menu</i>
-         </a>
-         <ul class="right hide-on-med-and-down">
-             <li><a href="index.html">Home</a></li>
-             <li><a href="#">Blog</a></li>
-             <li><a href="#contact">Contact</a></li>
-             <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Instagram">
-                 <i class="fab fa-instagram"></i>
-             </a></li>
-             <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Facebook">
-                 <i class="fab fa-facebook"></i>
-             </a></li>
-             <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Linked In">
-                 <i class="fab fa-linkedin"></i>
-             </a></li>
-             <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4"data-tooltip="Twitter">
-                    <i class="fab fa-twitter"></i>
-             </a></li>
-            </ul>
-        <ul class="sidenav grey lighten-2" id="mobile-menu">
-             <li><a href="#">Home</a></li>
-             <li><a href="#">Blog</a></li>
-             <li><a href="#contact">Contact</a></li>
-        </ul>
-     </div>
- </nav>
-</header>
-  <!-- parallax -->
-  <div class="parallax-container">
+    <!-- navbar -->
+    <header>
+        <nav class="nav-wrapper blue lighten-3">
+            <div class="container">
+                <a href="#" class="brand-logo">Blog</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Linked In">
+                            <i class="fab fa-linkedin"></i>
+                        </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- parallax -->
+    <div class="parallax-container">
         <div class="parallax">
             <img src="img/stream.JPG" alt="" class="responsive-img">
         </div>
     </div>
-    
-  <!-- photo / grid -->
-<section class="container section scrollspy" id="photos">
-    <div class="row">
-        <div class="col s12 l4">
-            <img src="img/fairlight.jpg" alt="" class="responsive-img materialboxed">
-        </div>
-        <div class="col s12 l6 offset-l1">
-            <h2 class="indigo-text text-darken-4">Neuroplasticity & Growth Mindset</h2>
-<br>
-            <a href="#push3" class="btn blue modal-trigger">Click Here</a>
-        </div>
-        <div>
+
+    <!-- photo / grid -->
+    <section class="container section scrollspy" id="photos">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/fairlight.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Neuroplasticity & Growth Mindset</h2>
+                <br>
+                <a href="#push3" class="btn blue modal-trigger">Click Here</a>
+            </div>
+            <div>
 
 
-            <div class="modal" id="push3">
-                <h4>Neuroplasticity & Growth Mindset</h4>
-                    <p>When I was 7 years old I got a cold and for some reason my brain though it would be a great idea to release the wrong antibodies. The first time I remember feeling like something wasn't right was when I was pulling my socks on, I couldn't grip them well enough to pull them up. Within a few weeks I was struggling to walk or stand, I didn't have the strength in my legs to hold myself up. It wasn't long before I was diagnosed with Chronic inflammatory demyelinating polyneuropathy. A neurological disorder than essentially slows or stops the messages being passed from your brain to your muscles.</p>
-                    <p>The reason I mention this is that for the next 18 years I struggled with CIDP. I did gain strength over the years, I got to a point I could walk again and even ride my bike when I was about 15. During this time I was struggling with depression and I remember my doctor telling me a number of times to keep positive because "the brain is an amazing thing". I didn't really pay much attention to this; after all my brain worked fine, it was the nerves that were shot.</p>
-                    <p> when I was 18 and my strength had been doing well (it cycled up and down over about a 4 weekly period by this time and I had an infusion over a weekend of antibodies to get me back up to strength) I went on an actual holiday with couple of my best mates. A couple of weeks by the coast and possible plans to do more through the summer depending on how my strength went.</p>
-                    <p>Just under 8 weeks later; after an entire summer of actually doing things, being surrounded by friends I trusted and actually being out of my home town it occurred to my that my strength was starting to fade again. But what hit me, and my Mum especially, is that it had been 8 weeks! The single longest amount of time that I had been between infusions ever!</p>
+                <div class="modal" id="push3">
+                    <h4>Neuroplasticity & Growth Mindset</h4>
+                    <p>
+                        When I was 7 years old I got a cold and for some reason my brain though it would be a great idea
+                        to release the wrong antibodies. The first time I remember feeling like something wasn't right
+                        was when I was pulling my socks on, I couldn't grip them well enough to pull them up. Within a
+                        few weeks I was struggling to walk or stand, I didn't have the strength in my legs to hold
+                        myself up. It wasn't long before I was diagnosed with Chronic inflammatory demyelinating
+                        polyneuropathy. A neurological disorder than essentially slows or stops the messages being
+                        passed from your brain to your muscles.
+                    </p>
+                    <p>
+                        The reason I mention this is that for the next 18 years I struggled with CIDP. I did gain
+                        strength over the years, I got to a point I could walk again and even ride my bike when I was
+                        about 15. During this time I was struggling with depression and I remember my doctor telling me
+                        a number of times to keep positive because "the brain is an amazing thing". I didn't really pay
+                        much attention to this; after all my brain worked fine, it was the nerves that were shot.
+                    </p>
+                    <p>
+                        When I was 18 and my strength had been doing well (it cycled up and down over about a 4 weekly
+                        period by this time and I had an infusion over a weekend of antibodies to get me back up to
+                        strength) I went on an actual holiday with couple of my best mates. A couple of weeks by the
+                        coast and possible plans to do more through the summer depending on how my strength went.
+                    </p>
+                    <p>
+                        Just under 8 weeks later; after an entire summer of actually doing things, being surrounded by
+                        friends I trusted and actually being out of my home town it occurred to my that my strength was
+                        starting to fade again. But what hit me, and my Mum especially, is that it had been 8 weeks! The
+                        single longest amount of time that I had been between infusions ever!
+                    </p>
                     <br>
-                    <p>So why have I just recited all these memories from my past?</p>
+                    <p>
+                        So why have I just recited all these memories from my past?
+                    </p>
                     <br>
-                    <p>Well the following summer; after settling back into a 3 to 4 week cycle of infusions through that year, I went away again and I had another great summer and when it came around to needing my next infusion it was just over 8 weeks!</p>
-                    <p>At this point I remember thinking about what the doctor and many others had been telling me over the years - be positive!</p>
-                    <p>I tried to put this to the test, I tried really hard to be positive in my thoughts and I started to see what would happen if I didn't immediately have an infusion when I started to feel weaker. The result was that whilst I would get weaker after about 3 or 4 weeks I didn't continue to get weaker and weaker. I just sort of plateaued at a level where I could still function day to day. Eventually though after another couple of weeks I would have the infusion again and get back to my 'normal' strength. </p>
-                    <p>The fact that I was not deteriorating beyond a certain point made me question how much of me was still sick and how much of me 'thought' I was still sick. It had been a long time since any nerve testing had showed any actual damage.</p>
-                    <p>Anyway I hope you can see where I am going with this, I feel that in the later years of my illness there was as much wrong with the way my brain was wired as there was physically, if not more.</p>
+                    <p>
+                        Well the following summer; after settling back into a 3 to 4 week cycle of infusions through
+                        that
+                        year, I went away again and I had another great summer and when it came around to needing my
+                        next infusion it was just over 8 weeks!
+                    </p>
+                    <p>
+                        At this point I remember thinking about what the doctor and many others had been telling me over
+                        the years - be positive!
+                    </p>
+                    <p>
+                        I tried to put this to the test, I tried really hard to be positive in my thoughts and I started
+                        to see what would happen if I didn't immediately have an infusion when I started to feel weaker.
+                        The result was that whilst I would get weaker after about 3 or 4 weeks I didn't continue to get
+                        weaker and weaker. I just sort of plateaued at a level where I could still function day to day.
+                        Eventually though after another couple of weeks I would have the infusion again and get back to
+                        my 'normal' strength.
+                    </p>
+                    <p>
+                        The fact that I was not deteriorating beyond a certain point made me question how much of me was
+                        still sick and how much of me 'thought' I was still sick. It had been a long time since any
+                        nerve testing had showed any actual damage.
+                    </p>
+                    <p>
+                        Anyway I hope you can see where I am going with this, I feel that in the later years of my
+                        illness there was as much wrong with the way my brain was wired as there was physically, if not
+                        more.
+                    </p>
                     <br>
-                    <p>I eventually pushed the gap between infusions to 6 months and then never again and It has left me with a conviction that the brain is absolutely able to learn at any given age.</p>
-                    <p>I have forgotten some of this attitude in the years since, I have perhaps become too accepting of my short comings so researching neuroplasticity and the growth mindset has got me thinking about it again. Going forward I'm going to use these concepts on a few small areas that I am keen to improve on, rather than accepting that I'm as good as I'm going to get.</p>
+                    <p>
+                        I eventually pushed the gap between infusions to 6 months and then never again and It has left
+                        me
+                        with a conviction that the brain is absolutely able to learn at any given age.
+                    </p>
+                    <p>
+                        I have forgotten some of this attitude in the years since, I have perhaps become too accepting
+                        of
+                        my short comings so researching neuroplasticity and the growth mindset has got me thinking about
+                        it again. Going forward I'm going to use these concepts on a few small areas that I am keen to
+                        improve on, rather than accepting that I'm as good as I'm going to get.
+                    </p>
                     <br>
-                <div class="modal-footer">
+                    <div class="modal-footer">
                         <a href="#" class="modal-close btn blue">Close</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 offset-l1 push-l7">
+                <img src="img/sunset.JPG" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                <h2 class="indigo-text text-darken-4">Emotional Intelligence - EQ vs IQ</h2>
+                <br>
+                <a href="#push2" class="btn blue modal-trigger">Click Here</a>
+            </div>
+            <div>
+
+
+                <div class="modal" id="push2">
+                    <h4>EQ vs IG</h4>
+                    <p>People we are very good an quantifying things. We grow up being taught that everything can be
+                        measured and quantified against each other. Our schools test and exam everyone and we all get
+                        scores at the end relating to how good we are at a particular subject. Collectively this has
+                        become what we measure as IQ.
+                        The trouble is that we are naturally emotional creatures. Emotion drives nearly all of our
+                        decisions that we make in life and these decisions will be based on what has affected us
+                        emotionally in the past. EQ is the ability to understand emotions within ourselves and our
+                        friends or co-workers that are around us on a daily basis. By being aware of how a situation is
+                        affecting us emotionally we can better react to that situation.
+                    </p>
+                    <br>
+                    <div class="img-column center"><img src="img/EQ.jpg" class="responsive-img materialboxed">
+                    </div>
+                    <br>
+                    <p>Reading about Emotional Intelligence is new for me, although the concepts that it is touching on
+                        are slightly familiar. As I was growing up I got quite sick for many years, this illness
+                        affected me primarily on a physical level but it took me a long time to realise how much mental
+                        damage it had caused. I have been aware of my own emotions for a number of years now and that's
+                        mainly due to depression. Years after my illness has cleared up I still have issues with
+                        depression but rather than just letting it be I have tried to understand what's happening. There
+                        is obviously no immediate fix and I still have low moments or times of stress that can make me
+                        very distant towards people around me (CSS I'm looking at you!) but it has helped me reel things
+                        in better and be able to talk to loved ones.</p>
+                    <br>
+                    <div class="modal-footer">
+                        <a href="#" class="modal-close btn blue">Close</a>
+                    </div>
                 </div>
             </div>
-            
         </div>
-    </div>
-    <div class="row">
-        <div class="col s12 l4 offset-l1 push-l7">
-            <img src="img/sunset.JPG" alt="" class="responsive-img materialboxed">
-        </div>
-        <div class="col s12 l6 offset-l1 pull-l5 right-align">
-            <h2 class="indigo-text text-darken-4">Emotional Intelligence - EQ vs IQ</h2>
-            <br>
-                        <a href="#push2" class="btn blue modal-trigger">Click Here</a>
-                    </div>
-                    <div>
-            
-            
-                        <div class="modal" id="push2">
-                            <h4>EQ vs IG</h4>
-                                <p>People we are very good an quantifying things. We grow up being taught that everything can be measured and quantified against each other. Our schools test and exam everyone and we all get scores at the end relating to how good we are at a particular subject. Collectively this has become what we measure as IQ.
-                                The trouble is that we are naturally emotional creatures. Emotion drives nearly all of our decisions that we make in life and these decisions will be based on what has affected us emotionally in the past. EQ is the ability to understand emotions within ourselves and our friends or co-workers that are around us on a daily basis. By being aware of how a situation is affecting us emotionally we can better react to that situation.
-                                </p>
-                                <br>
-                                <div class="img-column center"><img src="img/EQ.jpg" class="responsive-img materialboxed">
-                                </div>
-                                <br>
-                                <p>Reading about Emotional Intelligence is new for me, although the concepts that it is touching on are slightly familiar. As I was growing up I got quite sick for many years, this illness affected me primarily on a physical level but it took me a long time to realise how much mental damage it had caused. I have been aware of my own emotions for a number of years now and that's mainly due to depression. Years after my illness has cleared up I still have issues with depression but rather than just letting it be I have tried to understand what's happening. There is obviously no immediate fix and I still have low moments or times of stress that can make me very distant towards people around me (CSS I'm looking at you!) but it has helped me reel things in better and be able to talk to loved ones.</p>
-                                <br>
-                            <div class="modal-footer">
-                                    <a href="#" class="modal-close btn blue">Close</a>
-                            </div>
-                        </div>
-        </div>
-    </div>
-    <br>
+        <br>
         <div class="row">
-        <div class="col s12 l4">
-            <img src="img/whitsunday.jpg" alt="" class="responsive-img materialboxed">
-        </div>
-        <div class="col s12 l6 offset-l1">
-            <h2 class="indigo-text text-darken-4">Learning Plan</h2>
-            <br>
-            <a href="#push1" class="btn blue modal-trigger">Click Here</a>
-            <div>
-                    
-        
+            <div class="col s12 l4">
+                <img src="img/whitsunday.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Learning Plan</h2>
+                <br>
+                <a href="#push1" class="btn blue modal-trigger">Click Here</a>
+                <div>
+
+
                     <div class="modal" id="push1">
                         <div class="row">
                             <div class="column">
-                                <p>-</p>        
-                        <div class="modal-footer">
-                                <a href="#" class="modal-close btn blue">Close</a>
+                                <p>-</p>
+                                <div class="modal-footer">
+                                    <a href="#" class="modal-close btn blue">Close</a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
-  <div class="parallax-container">
+    <div class="parallax-container">
         <div class="parallax">
             <img src="img/snow.jpg" alt="" class="responsive-img">
         </div>
     </div>
 
-  <!-- contact form -->
-<section class="section container scrollspy" id="contact">
-    <div class="row">
-        <div class="col s12 l5">
-            <h2 class="indigo-text text-darken-4">Get In Touch</h2>
-
-            
-        </div>
-        <div class="col s12 l5 offset-l2">
-            <form>
-                    <div class="input-field">
-                            <i class="material-icons prefix">email</i>
-                            <input type="email" id="email">
-                            <label for="email">Your Email</label>
-                        </div>
-                        <div class="input-field">
-                            <i class="material-icons prefix">message</i>
-                            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-                        <div class="input-field center">
-                            <button class="btn">Submit</button>
-                        </div>
-            </form>
-        </div>
-        
-    </div>
-</section>
-  <!-- footer -->
-  <footer class="page-footer grey darken-3">
-    <div class="container">
+    <!-- contact form -->
+    <section class="section container scrollspy" id="contact">
         <div class="row">
-            <div class="col s12 l6">
-                <h5>About Me</h5>
-                <p>My name is Fraser, I just started studying with DevAcademy. </p>
-                <p>With a fairly IT heavy backgroud and a number of years in TV production I have decided it's time for something new. I love tech and I want to be part of the future of the internet and everything connected to it.</p>
-                <p>This is a blog of my journey.</p>
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+
+
             </div>
-            <div class="col s12 l4 offset-l2">
-                <h5>Connect</h5>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/fraser-callum-a84a1a33" class="grey-text text-lighten-3">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/fraserthepirate/" class="grey-text text-lighten-3">Instagram</a></li>
-              </ul>
+            <div class="col s12 l5 offset-l2">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                        <label for="message">Your message</label>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>My name is Fraser, I just started studying with DevAcademy. </p>
+                    <p>With a fairly IT heavy backgroud and a number of years in TV production I have decided it's time
+                        for something new. I love tech and I want to be part of the future of the internet and
+                        everything connected to it.</p>
+                    <p>This is a blog of my journey.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/fraser-callum-a84a1a33"
+                                class="grey-text text-lighten-3">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/fraserthepirate/"
+                                class="grey-text text-lighten-3">Instagram</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer-copyright grey darken-4">
-        <div class="container center-align">&copy; 2019 Fraser Callum</div>
-    </div>
-</footer>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-        $('.materialboxed').materialbox();
-        $('.parallax').parallax();
-        $('.tabs').tabs();
-        $('.datepicker').datepicker({
-            disableWeekends: true
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2019 Fraser Callum</div>
+        </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip()
+            $('.scrollspy').scrollSpy()
+            $('.modal').modal()
         });
-        $('.tooltipped').tooltip()
-        $('.scrollspy').scrollSpy()
-        $('.modal').modal()
-    });
-  </script>
+    </script>
 </body>
+
 </html>
